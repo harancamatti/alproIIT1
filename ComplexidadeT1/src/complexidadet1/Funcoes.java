@@ -94,6 +94,7 @@ public class Funcoes {
     }
     //chamada inicial f8(s="", C={1, 2, 3,..., n}
     public static void alg8(String s, ArrayList<Integer> arr){
+        Contagem.add();
         if (arr.isEmpty()){
             System.out.println(s);
             return;
