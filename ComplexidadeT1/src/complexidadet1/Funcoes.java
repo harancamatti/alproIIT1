@@ -94,12 +94,13 @@ public class Funcoes {
     }
     //chamada inicial f8(s="", C={1, 2, 3,..., n}
     public static void alg8(String s, ArrayList<Integer> arr){
+        Contagem.add();
         if (arr.isEmpty()){
             System.out.println(s);
             return;
         }
         ArrayList<Integer> copy = new ArrayList(arr);
-        int a = copy.remove(1);
+        int a = copy.remove(0);
         alg8(s, copy);
         alg8(s + "," + a, copy );
     }
